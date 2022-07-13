@@ -1,0 +1,78 @@
+body {
+  background-color:#6BBCBE
+}
+
+.animation { 
+  height:100vh;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content:center;
+}
+.dots {
+  display: flex;
+  animation:awesome-animation-dot 1s infinite;
+}
+.dot {
+  width:4px;
+  height: 4px;
+  background-color: white;
+  border:1px solid white;
+  border-radius: 50%;
+  margin: 7px;
+}
+
+.squares {
+  display: flex;
+  margin-top: 50px;
+}
+.square {
+  width:6px;
+  height:30px;
+  margin: 0 2px;
+  background-color:white;
+}
+
+.square:first-child {
+  animation: awesome-animation-square 1s infinite;
+}
+.square:nth-child(2) {
+  animation: awesome-animation-square 1s infinite;
+  animation-delay:80ms;
+}
+.square:nth-child(3) {
+  animation: awesome-animation-square 1s infinite;
+  animation-delay:160ms;
+}
+.square:nth-child(4) {
+  animation: awesome-animation-square 1s infinite;
+  animation-delay:240ms;
+}
+.square:last-child {
+  animation: awesome-animation-square 1s infinite;
+  animation-delay:320ms;
+}
+
+
+
+@keyframes awesome-animation-dot {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes awesome-animation-square {
+  0% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(2);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
