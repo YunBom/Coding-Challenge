@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+  }
+
+.playlist__main {
+    width:300px;
+    height:630px;
+    margin:10px;
+    border:3px solid #00C6AE;
+    padding:40px 20px;
+    display:flex;
+    justify-content: center;
+}
+
+/*헤더*/
+.playlist__header {
+    display: flex;
+    align-items: center;
+}
+.playlist__header-title {
+    display:flex;
+    width:90%;
+    justify-content: center;
+    font-size:larger;
+    font-weight: 600;
+}
+
+/*랜덤러브 타이틀*/
+.random-love {
+    margin: 10px 0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.random-love-icon {
+    width:100px;
+    height:100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFBE12;
+    border:2px solid black;
+    border-radius: 15px;
+}
+.random-love-icon i {
+    color: white;
+}
+.random-love__info {
+    padding: 10px;
+    padding-right: 0;
+    width:150px;
+}
+.random-love__info h1 {
+    font-size:30px;
+    font-weight:900;
+    line-height: 35px;
+} 
+.random-love__info span {
+    display:block;
+    font-weight: bolder;
+    margin: 10px 0;
+}
+
+/* 버튼 */
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.buttons button {
+    background-color: white;
+    border:2px solid black;
+    border-bottom-width: 5px;
+    margin: 0 7px;
+}
+.play-button {
+    width:120px;
+    height: 45px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.play-button span{
+    font-size: 20px;
+    font-weight: bold;
+    display:block;
+    margin-left: 5px;
+}
+.heart-button, .plus-button {
+    width: 45px;
+    height:48px;
+    border-radius: 50%;
+}
+
+/*리스트*/
+
+.play-list-music .color-box {
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.play-list-music:first-child .color-box {
+    background-color: #F85A2A;
+}
+.play-list-music:nth-child(2) .color-box {
+    background-color: #FF8ABB;
+}
+.play-list-music:nth-child(3) .color-box {
+    background-color: #1747E4;
+}
+.play-list-music:last-child .color-box {
+    background-color: #00C6AE;
+}
+
+.color-box {
+    margin-right: 10px;
+}
+.play-list-music {
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+}
+
+.music-title {
+    display:block;
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.music-author {
+    font-size: small;
+    font-weight: bolder;
+    color:rgba(0,0,0,0.6);
+}
