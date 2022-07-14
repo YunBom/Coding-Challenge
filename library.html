@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Book store</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+
+  <body>
+
+<!--헤더-->
+    <header>
+        <div class="header-top">
+            <i class="fa-solid fa-bars fa-2x"></i>
+            <div class="header-title">Library</div>
+            <i class="fa-solid fa-basket-shopping fa-2x"></i>
+        </div>
+        <form>
+            <div class="search">
+                <input type="text" placeholder="Search books...">
+                <div class="header-half-background"></div>
+            </div>
+        </form>
+
+    </header>
+
+    <main>
+<!--Book of the day-->
+        <div class="theme__title">Book of the day</div>
+        
+        <div class="book-of-the-day__contents">
+                <img src="https://imgs.search.brave.com/G3IPVehSwPTOwkN1ZzYqVWdK74TGTffOYf0fTDJvX6g/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9zdW1t/ZXJzZGFsZS5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMjAv/MDUvOTc4MDg1NzY1/OTI4Ni02LmpwZw">
+
+            <div class="book-of-the-day__info">
+                <span>No Fixed Abode</span>
+                <span id="book-of-the-day__journey">Journey Through</span>
+                <div class="star-point">
+                    <i class="fa-solid fa-star yellow-star"></i>
+                    <i class="fa-solid fa-star yellow-star"></i>
+                    <i class="fa-solid fa-star yellow-star"></i>
+                    <i class="fa-solid fa-star yellow-star"></i>
+                    <i class="fa-solid fa-star grey-star"></i>
+                </div>
+                <div class="book-of-the-day__category">
+                    <div>Journey</div>
+                    <div>Biography</div>
+                </div>
+                <div class="book-of-the-day__book">
+                    <div><i class="fa-solid fa-bookmark"></i></div>
+                    <span>Book now</span>
+                </div>
+            </div>
+        </div>    
+            
+<!--Top Adventures-->
+        <div class="theme__title">Top Adventures</div>
+          <div class="theme-adventures">
+            <div class="top-adventures__contents">
+                <div class="top-adventures__book-cover">
+                    <img src="https://imgs.search.brave.com/kycMjwuAGUHQfNBEuDwa3t0Qyvl96QSzq9waitadbCY/rs:fit:148:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5I/ejNEZDdvQVVxU3Nw/cWQ3R1JYdGxBQUFB/QSZwaWQ9QXBp">
+                </div>
+                <div class="star-point">
+                    <i class="fa-solid fa-star yellow-star fa-xs"></i>
+                    <i class="fa-solid fa-star yellow-star fa-xs"></i>
+                    <i class="fa-solid fa-star yellow-star fa-xs"></i>
+                    <i class="fa-solid fa-star yellow-star fa-xs"></i>
+                    <i class="fa-solid fa-star grey-star fa-xs"></i>
+                </div>
+            </div>
+            <div class="top-adventures__contents">
+                <div class="top-adventures__book-cover">
+                    <img src="https://imgs.search.brave.com/ZMwut9B4dXSvZpy1rVRqeVKQ2DiE6hAVjnSXx-O2fSI/rs:fit:523:640:1/g:ce/aHR0cHM6Ly9pLmVi/YXlpbWcuY29tL2lt/YWdlcy9nL1J-/OEFBT1N3ZXpWV3dy/UjAvcy1sNjQwLmpw/Zw">
+                </div>
+                <div class="star-point">
+                    <i class="fa-solid fa-star yellow-star fa-xs"></i>
+                    <i class="fa-solid fa-star yellow-star fa-xs"></i>
+                    <i class="fa-solid fa-star yellow-star fa-xs"></i>
+                    <i class="fa-solid fa-star yellow-star fa-xs"></i>
+                    <i class="fa-solid fa-star grey-star fa-xs"></i>
+                </div>
+            </div>
+            <div class="top-adventures__contents">
+                <div class="top-adventures__book-cover">
+                    <img src="https://imgs.search.brave.com/YGpAhchrBZa3vKieKGMAzBafw3ehG_e6YDnTm5sCVzo/rs:fit:780:1170:1/g:ce/aHR0cHM6Ly9pbWFn/ZS50bWRiLm9yZy90/L3Avdzc4MC9yWW9F/NmN1dXA5T2ZhbTZB/dVlhaUpMeEY5T08u/anBn">
+                </div>
+                <div class="star-point">
+                    <i class="fa-solid fa-star yellow-star fa-xs"></i>
+                    <i class="fa-solid fa-star yellow-star fa-xs"></i>
+                    <i class="fa-solid fa-star yellow-star fa-xs"></i>
+                    <i class="fa-solid fa-star yellow-star fa-xs"></i>
+                    <i class="fa-solid fa-star grey-star fa-xs"></i>
+                </div>
+            </div>
+            <div class="top-adventures__contents">
+                <div class="top-adventures__book-cover">
+                    <img src="https://imgs.search.brave.com/2U87-UlUvldVhdQ8SYnIeR8lqXVY1uWzCwNZoyPMwh0/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9pbWFn/ZXMtbmEuc3NsLWlt/YWdlcy1hbWF6b24u/Y29tL2ltYWdlcy9T/L3B2LXRhcmdldC1p/bWFnZXMvMDk0YjY3/YjNjNDMxYmMwOWVm/N2RjNWNjMGJkMzA1/MDBkOTA2MzBiZWE5/N2YxNTM0YjQ4MjJm/YjhhNDdlYTA4Mi5f/UklfVl9UVFdfLmpw/Zw">
+                </div>
+                <div class="star-point">
+                    <i class="fa-solid fa-star yellow-star fa-xs"></i>
+                    <i class="fa-solid fa-star yellow-star fa-xs"></i>
+                    <i class="fa-solid fa-star yellow-star fa-xs"></i>
+                    <i class="fa-solid fa-star yellow-star fa-xs"></i>
+                    <i class="fa-solid fa-star grey-star fa-xs"></i>
+                </div>
+            </div>
+            </div>    
+
+        <div class="theme__title">Popular authors</div>
+        <div class="authors">
+            <img src="https://imgs.search.brave.com/0vUbHoIerd6YWUaJtNphZKh7qBDU_6tiWXrQLu75hqE/rs:fit:373:560:1/g:ce/aHR0cHM6Ly9rbmln/b3BvaXNrLm9yZy9h/dXRob3JzX2F2YXRh/cnMvYWJiYTY5OTFi/ZmUzNGI3NzgyZmY0/MjM0MmIwMS5qcGc">
+            <div class="authors-introduce">
+                <div class="author-name"> George Raymond Richard Martin</div>
+                <div class="author-explain">Moodern Amirican science fiction writer, screenwriter, producer and ditor, winner of many literary awards.</div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <script src="https://kit.fontawesome.com/c2295807e7.js" crossorigin="anonymous"></script>
+
+  </body>
+</html>
