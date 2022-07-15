@@ -1,0 +1,228 @@
+
+* {
+    box-sizing: border-box;
+  }
+body {
+    background-color: #F3F3F5;
+    display:flex;
+    justify-content: center;
+
+}
+.main-screen {
+    height:700px;
+    width: 400px;
+    background-color: white;
+    margin:20px;
+    padding:40px 25px;
+    border-radius: 30px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header-icon {
+    display:block;
+    display:flex;
+    justify-content: space-between;
+    width:100%
+}
+.head-title {
+    font-weight: 600;
+    font-size:25px;
+    margin-bottom:15px;
+}
+.music__creator {
+    opacity:0.5;
+    font-size: 13px;
+    margin-bottom:7px;
+}
+
+
+
+
+/*첫번째 화면*/
+
+.Tyler-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Tyler-profile img{
+    height:100px;
+    width:100px;
+    margin-top: 20px;
+    margin-bottom:30px;
+    object-fit : cover;
+    border-radius: 100%;
+    box-shadow: 0 10px 10px #ffd3d2;    /*그림자 효과*/
+}
+.Tyler-profile__title {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.Tyler__btn {
+    display:flex;
+}
+.Tyler__btn button {    /*두 버튼 공통 속성*/
+    height:40px;
+    width:110px;
+    border:none;
+    border-radius: 30px;
+    display:block;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 10px;
+} 
+.Tyler__btn button:hover {
+    cursor: pointer;
+} 
+.Tyler__heart-btn i {
+    margin-right:5px;
+}
+.Tyler__shuffle-btn {    /*셔플 버튼*/
+    background-color: black;
+    color:white;
+}
+.Tyler__heart-btn { /*하트 버튼*/
+    background-color: white;
+    box-shadow: 0 5px 10px rgb(235, 235, 235);
+}
+
+
+/*리스트*/
+ul {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.play-list {
+    display:block;
+    width:300px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-right:0;
+}
+.play-list img {
+    width:50px;
+    height:50px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+.list-music__info-column:first-child {
+    display: flex;
+    align-items: center;
+}
+.list-music__title {
+    text-transform: uppercase;
+    margin-top:8px;
+    font-weight: 600;
+}
+
+/* 하단 재생바*/
+.main-screen {
+    position: relative;
+}
+.music-bar {
+    background-color: black;
+    color:white;
+    width:300px;
+    height:60px;
+    padding:10px 25px;
+    border-radius: 30px;
+    position:fixed;
+    bottom:30px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.music-bar__music-title {
+    font-size: 15px;
+}
+.music-bar__column:last-child i {
+    margin-left:20px;
+}
+
+
+/*두번째 화면*/
+  
+.album-cover img {
+    border-radius: 20px;
+    border:none;
+    margin : 60px 0;
+    box-shadow: 0 20px 30px #f79c9a;
+}
+.album-title {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.play-time {
+    margin-top: 40px;
+    margin-bottom:15px;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+.play-time__time {
+    font-size: smaller;
+    opacity:0.5;
+}
+.play-bar {
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+.play-bar__played {
+    background-color: black;
+    height:3px;
+    width:63%;
+    border-radius: 2px;
+}
+.play-bar__left-part {
+    background-color: rgb(207, 207, 207);
+    height:3px;
+    width:37%;
+    border-radius: 2px;
+}
+.play-bar__playing {
+    height:9px;
+    width:9px;
+    border-radius: 100%;
+    background-color: black;
+    position:relative;
+    bottom:6px;
+    left:39px;
+}
+.music-control {
+    margin-top:40px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.music-control .fa-grey {
+    color: rgb(207, 207, 207);
+}
+.play-icon {
+    width:60px;
+    height:60px;
+    background-color: black;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 20px rgb(194, 194, 194);
+}
+.play-icon .fa-play {
+    color:white;
+
+}
+

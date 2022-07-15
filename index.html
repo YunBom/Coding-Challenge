@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>play music</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+
+
+<body>
+
+    <div class="main-screen"> <!--노래 리스트 첫번째 화면-->
+
+        <header class="header-icon">
+            <i class="fa-solid fa-arrow-left"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </header>
+            
+        <div class="Tyler-profile"> <!--Tyler 타이틀 프로필-->
+            <img src="https://imgs.search.brave.com/-XcZIA_-gyNHWqT1JS5OY44F89Pdp-RhMDlaPtRNDqc/rs:fit:722:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5D/ektoQVBXeVVLN1V1/T19aaTZvbEhRSGFF/MyZwaWQ9QXBp">
+            <div class="Tyler-profile__title">
+                <div class="head-title">Tyler, The Creator</div>
+                <div class="Tyler__category music__creator">Rap, Hip-Hop</div>
+            </div>  
+            <form class="Tyler__btn">
+                <button class="Tyler__shuffle-btn">Shuffle</button>
+                <button class="Tyler__heart-btn">
+                    <i class="fa-solid fa-heart"></i>
+                    <div>212 971</div>
+                </button>
+            </form>
+        </div>
+
+
+        <ul> <!--음악 재생목록-->
+            <li class="play-list">                
+                <div class="list-music__info-column">
+                    <img class="list-music__img" src="https://imgs.search.brave.com/FkDOyImTkyecvUoiiHiTwRZ5gQIxYEBUzGGk3paWP1o/rs:fit:473:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC43/WncyR0xqMU9PVHZU/cHp2TFJNeGFnSGFI/YiZwaWQ9QXBp">
+                    <div class="list-music__info">
+                        <div class="music__creator">Tyler, the Creator</div>
+                        <div class="list-music__title"> earfquake </div>
+                    </div>
+                </div>
+                <div class="list-music__info-column">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>                
+            </li>
+
+            <li class="play-list">                
+                <div class="list-music__info-column">
+                    <img class="list-music__img" src="https://imgs.search.brave.com/p9sW2QQfCAu455v2Av-hWZVmbKh0B-8dht7cqW5NlAs/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5w/TlpSNDJibDNmMkZ6/T3o1UVZfTUp3SGFI/YSZwaWQ9QXBp">
+                    <div class="list-music__info">
+                        <div class="music__creator">Tyler, the Creator</div>
+                        <div class="list-music__title">november</div>
+                    </div>
+                </div>
+                <div class="list-music__info-column">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+            </li>
+
+            <li class="play-list">
+                <div class="list-music__info-column">
+                    <img class="list-music__img" src="https://imgs.search.brave.com/WHDnBk9GjUB0oy6wKHEE8ODHKQ7hWCpTI1Pw2R4NMUE/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC52/UVpOQjZtWXh2VmFi/QWp2TWxzTVdnSGFI/YSZwaWQ9QXBp">
+                    <div class="list-music__info">
+                        <div class="music__creator">Tyler, the Creator</div>
+                        <div class="list-music__title">911</div>
+                    </div>
+                </div>
+                <div class="list-music__info-column">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>                
+            </li>
+
+            <li class="play-list">
+                <div class="list-music__info-column">
+                    <img class="list-music__img" src="https://imgs.search.brave.com/5zPbmFDRJcALclMKHrmI2ELTuN-0_r9eg7AjLitGZng/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5s/bzJQc1BLczAxVmJ1/Qm91Yk1kdllRSGFI/YSZwaWQ9QXBp">
+                    <div class="list-music__info">
+                        <div class="music__creator">Tyler, the Creator</div>
+                        <div class="list-music__title">wolf</div>
+                    </div>
+                </div>
+                <div class="list-music__info-column">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>                
+            </li>
+        </ul>
+
+
+<!--하단 음악 재생바-->
+        <div class="music-bar">
+            <div class="music-bar__column">    
+                <div class="music__creator">Tyler, the Creator</div>
+                <div class="music-bar__music-title">NOVEMBER</div>
+            </div>
+            <div class="music-bar__column">
+                <i class="fa-solid fa-backward-step"></i>
+                <i class="fa-solid fa-pause"></i>
+                <i class="fa-solid fa-forward-step"></i>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+    <div class="main-screen"> <!--노래 재생 두번째 화면-->
+
+        <header class="header-icon">
+            <i class="fa-solid fa-arrow-left"></i>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+        </header>
+
+<!--앨범 메인 이미지-->
+        <div class="album-cover">
+            <img src="https://imgs.search.brave.com/p9sW2QQfCAu455v2Av-hWZVmbKh0B-8dht7cqW5NlAs/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5w/TlpSNDJibDNmMkZ6/T3o1UVZfTUp3SGFI/YSZwaWQ9QXBp">
+        </div>
+
+<!--앨범 타이틀 정보-->
+        <div class="album-title">
+            <div class="head-title">November</div>
+            <div class="music__creator album__creator">Tyler The Creator</div>
+        </div>
+
+<!--재생길이-->
+        <div class="play-time">
+            <span class="play-time__time">1:56</span>
+            <span class="play-time__time">2:27</span>
+        </div>
+        <div class="play-bar">
+            <div class="play-bar__played"></div>
+            <div class="play-bar__left-part"></div>
+        </div>
+        <div class="play-bar__playing"></div>
+
+<!--음악 컨트롤 부분-->
+        <div class="music-control">
+            <i class="fa-solid fa-repeat fa-lg fa-grey"></i>
+            <i class="fa-solid fa-backward-step fa-lg"></i>
+            <div class="play-icon"><i class="fa-solid fa-play fa-lg"></i></div>
+            <i class="fa-solid fa-forward-step fa-lg"></i>
+            <i class="fa-solid fa-shuffle fa-lg fa-grey"></i>
+        </div>
+
+
+
+    </div> <!--두번째 화면 끝-->
+
+    <script src="https://kit.fontawesome.com/c2295807e7.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
