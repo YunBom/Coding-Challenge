@@ -38,15 +38,19 @@ header {
 }
 .search {
     display:flex;
-    justify-content: center;
+    justify-content: flex-end;
     margin-top: 30px;
+}
+.search i {
+    position:absolute;
+    z-index:3;
 }
 .search input {
     border:none;
     height:60px;
     width:100%;
     border-radius: 30px;
-    z-index:1;
+    z-index:2;
     box-shadow: 0px 10px 7px rgba(163, 163, 163, 0.2);
     padding:30px;
 }
@@ -55,8 +59,9 @@ header {
     height: 40px;
     background-color: white;
     position:absolute;
+    left:0px;
     bottom:0px;
-    z-index: 0;
+    z-index: 1;
 }
 
 .theme__title {
