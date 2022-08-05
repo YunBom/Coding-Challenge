@@ -1,5 +1,5 @@
 // <⚠️ DONT DELETE THIS ⚠️>
-// import "./styles.css";
+/* import "./styles.css"; */
 const colors = ["#1abc9c", "#3498db", "#9b59b6", "#f39c12", "#e74c3c"];
 // <⚠️ /DONT DELETE THIS ⚠️>
 
@@ -24,7 +24,12 @@ const superEventHandler = {
   }
 };
 
-h2.onmouseenter = superEventHandler.handleEnter;
+h2.addEventListener("mouseenter", superEventHandler.handleEnter);
+h2.addEventListener("mouseleave", superEventHandler.handleLeave);
+h2.addEventListener("auxclick", superEventHandler.handleAuxclick);
+window.addEventListener("resize", superEventHandler.handleResize);
+
+/* h2.onmouseenter = superEventHandler.handleEnter;
 h2.onmouseleave = superEventHandler.handleLeave;
 h2.onauxclick = superEventHandler.handleAuxclick;
-window.onresize = superEventHandler.handleResize;
+window.onresize = superEventHandler.handleResize; */
