@@ -1,7 +1,5 @@
 const clockTitle = document.querySelector(".js-clock");
 
-/* :${} */
-
 function time(){
     const today = new Date();
     const christmas = new Date("Dec 25 2022 00:00:00");
@@ -14,4 +12,5 @@ function time(){
 };
 setInterval(time, 1000);
 
-
+const xmasDay = new Date(`${new Date().getFullYear()}-12-25:00:00:00+0900`);
+console.log(xmasDay);
