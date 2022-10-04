@@ -1,35 +1,28 @@
-// <⚠️ DONT DELETE THIS ⚠️>
-/* import "./styles.css"; */
-const colors = ["#1abc9c", "#3498db", "#9b59b6", "#f39c12", "#e74c3c"];
-// <⚠️ /DONT DELETE THIS ⚠️>
+const colors = ["Green", "Blue", "Orange", "Purple"];
+const title = document.querySelector("h2");
 
-const h2 = document.querySelector("h2");
-
-const superEventHandler = {
-  handleEnter: function () {
-    h2.innerText = "The mouse is here!";
-    h2.style.color = colors[0];
+const handleEvent = {
+  enter: function () {
+    title.innerText = "Green!";
+    title.style.color = colors[0];
   },
-  handleLeave: function () {
-    h2.innerText = "The mouse in gone!";
-    h2.style.color = colors[1];
+  leave: function () {
+    title.innerText = "Blue!";
+    title.style.color = colors[1];
   },
-  handleAuxclick: function () {
-    h2.innerText = "Right click!";
-    h2.style.color = colors[2];
+  click: function () {
+    title.innerText = "Right click!";
+    title.style.color = colors[2];
   },
-  handleResize: function () {
-    h2.innerText = "Window is resized!";
-    h2.style.color = colors[3];
-  }
+  auxClick: function () {
+    title.innerText = "Orange!";
+    title.style.color = colors[3];
+  },
 };
 
-h2.addEventListener("mouseenter", superEventHandler.handleEnter);
-h2.addEventListener("mouseleave", superEventHandler.handleLeave);
-h2.addEventListener("auxclick", superEventHandler.handleAuxclick);
-window.addEventListener("resize", superEventHandler.handleResize);
+title.addEventListener("mouseenter", handleEvent.enter);
+title.addEventListener("mouseleave", handleEvent.leave);
+title.addEventListener("click", handleEvent.click);
+title.addEventListener("auxclick", handleEvent.auxClick);
 
-/* h2.onmouseenter = superEventHandler.handleEnter;
-h2.onmouseleave = superEventHandler.handleLeave;
-h2.onauxclick = superEventHandler.handleAuxclick;
-window.onresize = superEventHandler.handleResize; */
+

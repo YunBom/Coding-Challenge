@@ -2,8 +2,8 @@ const clockTitle = document.querySelector(".js-clock");
 
 function time(){
     const today = new Date();
-    const christmas = new Date("Dec 25 2022 00:00:00");
-    const leftTime = christmas - today;     // ms 단위로 계산됨.
+    const xmasDay = new Date(`${new Date().getFullYear()}-12-25:00:00:00+0900`);
+    const leftTime = xmasDay - today;     // ms 단위로 계산됨.
     const dates = parseInt(leftTime / (1000*60*60*24));
     const hours = String(24-today.getHours()).padStart(2,"0");
     const minutes = String(60-today.getMinutes()).padStart(2,"0");
@@ -12,5 +12,3 @@ function time(){
 };
 setInterval(time, 1000);
 
-const xmasDay = new Date(`${new Date().getFullYear()}-12-25:00:00:00+0900`);
-console.log(xmasDay);

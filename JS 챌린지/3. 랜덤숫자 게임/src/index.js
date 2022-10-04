@@ -10,7 +10,7 @@ function submitDefault(event){
     event.preventDefault();
     if(parseInt(userNumber.value) <= parseInt(maxNumber.value)) {
        playGame();
-    }
+    } 
     else {
         alert(maxNumber.value + " 이하의 숫자를 적어주세요.");
     }}
